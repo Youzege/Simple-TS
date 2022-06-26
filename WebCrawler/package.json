@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node ./src/crawler.ts"
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon node ./dist/crawler.js",
+    "dev": "concurrently yarn:dev:*"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "imgData/*"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -17,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "cheerio": "^1.0.0-rc.11"
+    "cheerio": "^1.0.0-rc.11",
+    "nodemon": "^2.0.18"
   }
 }
