@@ -1,0 +1,19 @@
+{
+  "name": "introduction-typerscript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Youzege/Simple-TS.git",
+  "author": "Youzege <youzegehq@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "cz": "git add . && git cz && git push -u origin main"
+  },
+  "devDependencies": {
+    "cz-customizable": "6.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
