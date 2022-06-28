@@ -12,7 +12,7 @@ interface Analyze {
 
 // 爬虫类
 class Crawler {
-  private filePath = path.resolve(__dirname, '../imgData/imgs.json')
+  private filePath = path.resolve(__dirname, '../../imgData/imgs.json')
 
   private async getRawHtml () {
     const result = await axios.get(this.url)
